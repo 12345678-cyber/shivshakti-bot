@@ -1,4 +1,4 @@
-export default function _defaults(obj, defaults) {
+function _defaults(obj, defaults) {
   var keys = Object.getOwnPropertyNames(defaults);
 
   for (var i = 0; i < keys.length; i++) {
@@ -12,3 +12,6 @@ export default function _defaults(obj, defaults) {
 
   return obj;
 }
+
+module.exports = _defaults;
+module.exports["default"] = module.exports, module.exports.__esModule = true;

@@ -1,4 +1,4 @@
-export default function _classStaticPrivateFieldSpecGet(receiver, classConstructor, descriptor) {
+function _classStaticPrivateFieldSpecGet(receiver, classConstructor, descriptor) {
   if (receiver !== classConstructor) {
     throw new TypeError("Private static access of wrong provenance");
   }
@@ -9,3 +9,6 @@ export default function _classStaticPrivateFieldSpecGet(receiver, classConstruct
 
   return descriptor.value;
 }
+
+module.exports = _classStaticPrivateFieldSpecGet;
+module.exports["default"] = module.exports, module.exports.__esModule = true;

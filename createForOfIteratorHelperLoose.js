@@ -1,5 +1,6 @@
-import unsupportedIterableToArray from "./unsupportedIterableToArray.js";
-export default function _createForOfIteratorHelperLoose(o, allowArrayLike) {
+var unsupportedIterableToArray = require("./unsupportedIterableToArray.js");
+
+function _createForOfIteratorHelperLoose(o, allowArrayLike) {
   var it;
 
   if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {
@@ -23,3 +24,6 @@ export default function _createForOfIteratorHelperLoose(o, allowArrayLike) {
   it = o[Symbol.iterator]();
   return it.next.bind(it);
 }
+
+module.exports = _createForOfIteratorHelperLoose;
+module.exports["default"] = module.exports, module.exports.__esModule = true;

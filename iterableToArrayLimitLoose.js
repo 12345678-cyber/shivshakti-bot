@@ -1,4 +1,4 @@
-export default function _iterableToArrayLimitLoose(arr, i) {
+function _iterableToArrayLimitLoose(arr, i) {
   if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
   var _arr = [];
 
@@ -10,3 +10,6 @@ export default function _iterableToArrayLimitLoose(arr, i) {
 
   return _arr;
 }
+
+module.exports = _iterableToArrayLimitLoose;
+module.exports["default"] = module.exports, module.exports.__esModule = true;

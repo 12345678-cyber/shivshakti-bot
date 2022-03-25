@@ -1,4 +1,4 @@
-import defineProperty from "./defineProperty.js";
+var defineProperty = require("./defineProperty.js");
 
 function ownKeys(object, enumerableOnly) {
   var keys = Object.keys(object);
@@ -14,7 +14,7 @@ function ownKeys(object, enumerableOnly) {
   return keys;
 }
 
-export default function _objectSpread2(target) {
+function _objectSpread2(target) {
   for (var i = 1; i < arguments.length; i++) {
     var source = arguments[i] != null ? arguments[i] : {};
 
@@ -33,3 +33,6 @@ export default function _objectSpread2(target) {
 
   return target;
 }
+
+module.exports = _objectSpread2;
+module.exports["default"] = module.exports, module.exports.__esModule = true;

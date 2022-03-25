@@ -1,5 +1,6 @@
-import setPrototypeOf from "./setPrototypeOf.js";
-export default function _inherits(subClass, superClass) {
+var setPrototypeOf = require("./setPrototypeOf.js");
+
+function _inherits(subClass, superClass) {
   if (typeof superClass !== "function" && superClass !== null) {
     throw new TypeError("Super expression must either be null or a function");
   }
@@ -13,3 +14,6 @@ export default function _inherits(subClass, superClass) {
   });
   if (superClass) setPrototypeOf(subClass, superClass);
 }
+
+module.exports = _inherits;
+module.exports["default"] = module.exports, module.exports.__esModule = true;

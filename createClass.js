@@ -8,8 +8,11 @@ function _defineProperties(target, props) {
   }
 }
 
-export default function _createClass(Constructor, protoProps, staticProps) {
+function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
   return Constructor;
 }
+
+module.exports = _createClass;
+module.exports["default"] = module.exports, module.exports.__esModule = true;

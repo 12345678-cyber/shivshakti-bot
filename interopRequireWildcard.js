@@ -1,4 +1,4 @@
-import _typeof from "@babel/runtime/helpers/typeof";
+var _typeof = require("@babel/runtime/helpers/typeof")["default"];
 
 function _getRequireWildcardCache() {
   if (typeof WeakMap !== "function") return null;
@@ -11,7 +11,7 @@ function _getRequireWildcardCache() {
   return cache;
 }
 
-export default function _interopRequireWildcard(obj) {
+function _interopRequireWildcard(obj) {
   if (obj && obj.__esModule) {
     return obj;
   }
@@ -51,3 +51,6 @@ export default function _interopRequireWildcard(obj) {
 
   return newObj;
 }
+
+module.exports = _interopRequireWildcard;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
