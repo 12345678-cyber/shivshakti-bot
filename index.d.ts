@@ -1,5 +1,9 @@
-export * from '../WAMessage/WAMessage';
-export * from './Binary/Constants';
-export * from './Binary/Decoder';
-export * from './Binary/Encoder';
-export * from './WAConnection/WAConnection';
+export * from './etc';
+export * from './functions';
+export * from './plugins';
+export * from './utils';
+import {Jimp, JimpConstructors} from './jimp';
+
+export { Jimp, JimpConstructors };
+declare const defaultExp: Jimp;
+export default defaultExp;
