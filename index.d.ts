@@ -1,9 +1,17 @@
-export * from './etc';
-export * from './functions';
-export * from './plugins';
-export * from './utils';
-import {Jimp, JimpConstructors} from './jimp';
+import { DecoderFn } from '@jimp/core';
 
-export { Jimp, JimpConstructors };
-declare const defaultExp: Jimp;
-export default defaultExp;
+interface Gif {
+  mime: {
+    'image/gif': string[]
+  }
+
+  constants: {
+    MIME_GIF: 'image/gif';
+  }
+
+  decoders: {
+    'image/gif': DecoderFn
+  }
+}
+
+export default function(): Gif;
