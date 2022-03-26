@@ -1,17 +1,12 @@
-import { Jimp, ImageCallback } from '@jimp/core';
+import { ImageCallback } from '@jimp/core';
 
-interface Blit {
-  blit(src: Jimp, x: number, y: number, cb?: ImageCallback<this>): this;
-  blit(
-    src: Jimp,
+interface Circle {
+  circle(options?: {
+    radius: number,
     x: number,
-    y: number,
-    srcx: number,
-    srcy: number,
-    srcw: number,
-    srch: number,
-    cb?: ImageCallback<this>
-  ): this;
+    y: number
+  }, cb?: ImageCallback<this>): this;
+  circle(cb?: ImageCallback<this>): this;
 }
 
-export default function(): Blit;
+export default function(): Circle;

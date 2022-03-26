@@ -1,7 +1,7 @@
 {
-  "name": "@jimp/plugin-blit",
+  "name": "@jimp/plugin-circle",
   "version": "0.16.1",
-  "description": "Blit an image.",
+  "description": "Creates a circle out of an image.",
   "main": "dist/index.js",
   "module": "es/index.js",
   "types": "index.d.ts",
@@ -23,13 +23,12 @@
     "@babel/runtime": "^7.7.2",
     "@jimp/utils": "^0.16.1"
   },
-  "devDependencies": {
-    "@jimp/custom": "^0.16.1",
-    "@jimp/jpeg": "^0.16.1",
-    "@jimp/test-utils": "^0.16.1"
-  },
   "peerDependencies": {
     "@jimp/custom": ">=0.3.5"
+  },
+  "devDependencies": {
+    "@jimp/custom": "^0.16.1",
+    "@jimp/test-utils": "^0.16.1"
   },
   "publishConfig": {
     "access": "public"
