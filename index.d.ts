@@ -1,17 +1,17 @@
-import { DecoderFn } from '@jimp/core';
+import { Jimp, ImageCallback } from '@jimp/core';
 
-interface Gif {
-  mime: {
-    'image/gif': string[]
-  }
-
-  constants: {
-    MIME_GIF: 'image/gif';
-  }
-
-  decoders: {
-    'image/gif': DecoderFn
-  }
+interface Blit {
+  blit(src: Jimp, x: number, y: number, cb?: ImageCallback<this>): this;
+  blit(
+    src: Jimp,
+    x: number,
+    y: number,
+    srcx: number,
+    srcy: number,
+    srcw: number,
+    srch: number,
+    cb?: ImageCallback<this>
+  ): this;
 }
 
-export default function(): Gif;
+export default function(): Blit;
